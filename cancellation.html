@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+<meta charset="UTF-8"> 
+<link rel="stylesheet" type="text/css" href="style.css">   
+<title>Nomadic</title>
+</head>
+
+<script>
+    var date=sessionStorage.getItem('journey_date');
+</script>
+
+<style>
+        input[type=text], input[type=number], input[type=email] {
+            width: 200px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #05386B;
+        }
+        
+        input[type=radio]{
+            color:#05386B;
+        }
+        
+        form{
+            font-size:20px;
+        }
+        
+        .submit_button{
+            -moz-appearance: none;
+            appearance: none;
+            font-size: 13px;
+            height:30px;
+            font-weight: bold;
+            background-color:whitesmoke;
+            color: green;
+            width: 200px;%;
+            text-align: center;
+            border: none;
+            
+        }
+        
+        </style>
+
+<body>
+    <h1 class="heading">
+        NOMADIC
+    </h1>
+    <div style="display: table;margin:0 auto">
+    <ul>
+        <li><a href="main.html">Book Ticket</a></li>
+        <li><a class="active" href="cancellation.html">Cancellation</a></li>
+        <li><a href="retrieve.html">Retrieve</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="cust.html">Customer Care</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+      </ul>
+      </div>
+      <form action="cancel.php" method="POST" style="display: table;margin:0 auto;margin-top: 100px;">
+            <input type="email" name="mail" placeholder="Mail ID">
+            <br>
+      <input type="text" name="mobile" maxlength="10" placeholder="Phone Number" required>
+      <br>
+        <input type="submit" name="submit" value="CANCEL" class="submit_button" required>
+        </form>
+</body>
+</html>

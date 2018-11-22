@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+<meta charset="UTF-8"> 
+<link rel="stylesheet" type="text/css" href="style.css">   
+
+<title>Nomadic</title>
+</head>
+
+
+<style>
+
+body{
+    background-image: url('airplane.jpg');
+    background-size: cover;
+     background-repeat: no-repeat;
+}
+
+#b1{
+    background-image: url('airplane1.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ #b2{
+    background-image: url('airplane3.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+</style>
+
+<body id="b1">
+        <script src="main.js"></script>
+    <h1 class="heading">
+        NOMADIC
+    </h1>
+    <div style="display: table;margin:0 auto">
+    <ul>
+        <li><a class="active" href="main.html">Book Ticket</a></li>
+        <li><a href="cancellation.html">Cancellation</a></li>
+        <li><a href="retrieve.html">Retrieve</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="cust.html">Customer Care</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+      </ul>
+      </div>
+      <div class="book_form">
+          <form action="search_flight.php" method="POST" style="opacity:0.9;">
+              <select required class="source rounded" name="source">
+                  <option value="" style="display: none">SELECT SOURCE</option>
+                  <option value="BLR">BANGALORE</option>
+                  <option value="HYD">HYDERABAD</option>
+                  <option value="MAA">CHENNAI</option>
+                  <option value="BOM">MUMBAI</option>
+                  <option value="CCU">KOLKATA</option>
+              </select>
+              <br><br>
+              <select required class="destination rounded" name="destination">
+                    <option value="" style="display: none">SELECT DESTINATION</option>
+                    <option value="BLR">BANGALORE</option>
+                    <option value="HYD">HYDERABAD</option>
+                    <option value="MAA">CHENNAI</option>
+                    <option value="BOM">MUMBAI</option>
+                    <option value="CCU">KOLKATA</option>
+                </select>
+                <br><br>
+                <div class="date">
+                Date: <input required type="date" name="journey_date" max="2018-11-30">
+                </div>
+                <br><br>
+              <select required class="destination rounded" name="passenger_count">
+                    <option value="" style="display: none">NO. OF PASSENGERS</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <br><br>
+              <select required class="destination rounded" name="class">
+                    <option value="" style="display: none">SELECT CLASS</option>
+                    <option value="EC">ECONOMY</option>
+                    <option value="BU">BUSINESS</option>
+                </select>
+                <br><br>
+                <input type="submit" name="submit" class="submit_button rounded" value="SEARCH FLIGHTS">
+          </form>
+      </div>
+</body>
+</html>
